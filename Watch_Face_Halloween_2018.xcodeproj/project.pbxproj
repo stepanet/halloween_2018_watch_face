@@ -90,6 +90,7 @@
 		9052E0A221878D24009C5352 /* Halloween2018.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Halloween2018.swift; sourceTree = "<group>"; };
 		9052E0A421878D24009C5352 /* Halloween2018.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Halloween2018.sks; sourceTree = "<group>"; };
 		9052E0A521878D24009C5352 /* halloween2018.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = halloween2018.atlasc; sourceTree = "<group>"; };
+		E0C78E752477FE190009A08A /* halloween2018.1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "halloween2018.1@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 				9052E04E21878C0C009C5352 /* AppDelegate.swift */,
 				9052E05021878C0C009C5352 /* ViewController.swift */,
 				9052E05221878C0C009C5352 /* Main.storyboard */,
+				E0C78E752477FE190009A08A /* halloween2018.1@2x.png */,
 				9052E05521878C0C009C5352 /* Assets.xcassets */,
 				9052E05721878C0C009C5352 /* LaunchScreen.storyboard */,
 				9052E05A21878C0C009C5352 /* Info.plist */,
@@ -492,15 +494,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LUKKGTQB5;
+				DEVELOPMENT_TEAM = KSQTHQN2B7;
 				INFOPLIST_FILE = "Watch_Face_Halloween_2018 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.Watch-Face-Halloween-2018.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.djsaw.WatchFace.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Watch_Face_Halloween_2018 WatchKit Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -514,15 +516,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LUKKGTQB5;
+				DEVELOPMENT_TEAM = KSQTHQN2B7;
 				INFOPLIST_FILE = "Watch_Face_Halloween_2018 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.Watch-Face-Halloween-2018.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.djsaw.WatchFace.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Watch_Face_Halloween_2018 WatchKit Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -537,11 +539,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LUKKGTQB5;
+				DEVELOPMENT_TEAM = KSQTHQN2B7;
 				IBSC_MODULE = Watch_Face_Halloween_2018_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch_Face_Halloween_2018 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.Watch-Face-Halloween-2018.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.djsaw.WatchFace.watchkitapp;
+				PRODUCT_NAME = "Watch_Face_Halloween_2018 WatchKit App";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -556,11 +558,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LUKKGTQB5;
+				DEVELOPMENT_TEAM = KSQTHQN2B7;
 				IBSC_MODULE = Watch_Face_Halloween_2018_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch_Face_Halloween_2018 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.Watch-Face-Halloween-2018.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.djsaw.WatchFace.watchkitapp;
+				PRODUCT_NAME = "Watch_Face_Halloween_2018 WatchKit App";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -574,14 +576,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LUKKGTQB5;
+				DEVELOPMENT_TEAM = KSQTHQN2B7;
 				INFOPLIST_FILE = Watch_Face_Halloween_2018/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.Watch-Face-Halloween-2018";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.djsaw.WatchFace;
+				PRODUCT_NAME = Watch_Face_Halloween_2018;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -592,14 +594,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LUKKGTQB5;
+				DEVELOPMENT_TEAM = KSQTHQN2B7;
 				INFOPLIST_FILE = Watch_Face_Halloween_2018/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.Watch-Face-Halloween-2018";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.djsaw.WatchFace;
+				PRODUCT_NAME = Watch_Face_Halloween_2018;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
