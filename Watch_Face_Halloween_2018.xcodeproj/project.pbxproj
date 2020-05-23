@@ -24,6 +24,7 @@
 		9052E0A621878D24009C5352 /* Halloween2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9052E0A221878D24009C5352 /* Halloween2018.swift */; };
 		9052E0A821878D24009C5352 /* Halloween2018.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9052E0A421878D24009C5352 /* Halloween2018.sks */; };
 		9052E0A921878D24009C5352 /* halloween2018.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 9052E0A521878D24009C5352 /* halloween2018.atlasc */; };
+		E0C78E7B247892980009A08A /* InitInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C78E7A247892980009A08A /* InitInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		9052E0A421878D24009C5352 /* Halloween2018.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Halloween2018.sks; sourceTree = "<group>"; };
 		9052E0A521878D24009C5352 /* halloween2018.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = halloween2018.atlasc; sourceTree = "<group>"; };
 		E0C78E752477FE190009A08A /* halloween2018.1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "halloween2018.1@2x.png"; sourceTree = "<group>"; };
+		E0C78E7A247892980009A08A /* InitInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				9052E07321878C0D009C5352 /* ExtensionDelegate.swift */,
 				9052E07521878C0D009C5352 /* Assets.xcassets */,
 				9052E07721878C0D009C5352 /* Info.plist */,
+				E0C78E7A247892980009A08A /* InitInterfaceController.swift */,
 			);
 			path = "Watch_Face_Halloween_2018 WatchKit Extension";
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9052E0A621878D24009C5352 /* Halloween2018.swift in Sources */,
+				E0C78E7B247892980009A08A /* InitInterfaceController.swift in Sources */,
 				9052E07421878C0D009C5352 /* ExtensionDelegate.swift in Sources */,
 				9052E07221878C0D009C5352 /* InterfaceController.swift in Sources */,
 			);

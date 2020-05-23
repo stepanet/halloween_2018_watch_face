@@ -7,19 +7,34 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--initScene-->
+        <scene sceneID="EKS-vA-CJb">
+            <objects>
+                <controller title="initScene" hidesWhenLoading="NO" id="rmb-ij-hh5" customClass="InitInterfaceController" customModule="Watch_Face_Halloween_2018_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="-248"/>
+        </scene>
+        <!--mainScene-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_Face_Halloween_2018_WatchKit_App" customModuleProvider="target">
+                <controller identifier="mainScene" spacing="1" hidesWhenLoading="NO" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_Face_Halloween_2018_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <spriteKitScene alignment="left" id="Ag9-yb-kMV"/>
+                        <group width="1" height="1" alignment="left" layout="overlap" radius="5" id="vd7-me-j5G">
+                            <items>
+                                <spriteKitScene width="1" height="1" alignment="left" verticalAlignment="center" id="Ag9-yb-kMV"/>
+                            </items>
+                            <color key="backgroundColor" red="0.25509890909999999" green="0.30208024379999998" blue="0.29019811750000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
                     </items>
+                    <color key="backgroundColor" red="0.25509890909999999" green="0.30208024379999998" blue="0.29019811750000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                     <connections>
                         <outlet property="scene" destination="Ag9-yb-kMV" id="K5D-AK-YT7"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="34" y="31"/>
+            <point key="canvasLocation" x="34" y="42.120535714285715"/>
         </scene>
     </scenes>
 </document>

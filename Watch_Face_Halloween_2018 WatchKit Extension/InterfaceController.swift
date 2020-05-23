@@ -16,11 +16,12 @@ class InterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+        setTitle("")
         let watchFace = Halloween2018()
         watchFace.scaleMode = .aspectFill
         self.scene.presentScene(watchFace)
         self.scene.preferredFramesPerSecond = 30
+        
     }
     
     override func willActivate() {
@@ -41,6 +42,9 @@ class InterfaceController: WKInterfaceController {
 
 extension InterfaceController {
     
+    
+    
+    
     func removeWatchOSTimeLabel() {
         // Do you want to see something spooky? Read this code :P
         guard let fullScreenViewType = NSClassFromString("SPFullScreenView") else {
@@ -54,6 +58,8 @@ extension InterfaceController {
             .value(forKey: "viewControllers") as? [NSObject] else {
                 return
         }
+        
+        
         
         viewControllers.forEach { controller in
             guard let views = (controller.value(forKey: "view") as? NSObject)?.value(forKey: "subviews") as? [NSObject] else {

@@ -36,15 +36,23 @@ public final class Halloween2018: SKScene {
             let backgroundNode = faceNode.childNode(withName: "Background") as? SKSpriteNode,
             let labelTimeNode = faceNode.childNode(withName: "Time") as? SKLabelNode,
             let labelDateNode = faceNode.childNode(withName: "Date") as? SKLabelNode,
-            let witchNode = faceNode.childNode(withName: "Witch") as? SKSpriteNode else {
+            let witchNode = faceNode.childNode(withName: "Witch") as? SKSpriteNode,
+            let witchNode2 = faceNode.childNode(withName: "Witch2") as? SKSpriteNode,
+            let witchNode3 = faceNode.childNode(withName: "Witch3") as? SKSpriteNode else {
                 return
         }
         
         backgroundNode.texture = textureAtlas.textureNamed("background")
         labelTimeNode.fontName = "LakkiReddy"
         labelDateNode.fontName = "LakkiReddy"
+        
         witchNode.texture = textureAtlas.textureNamed("witch")
         witchNode.run(animateWitch(node: witchNode))
+        
+        witchNode2.texture = textureAtlas.textureNamed("witch2")
+        witchNode2.run(animateWitch(node: witchNode2))
+        
+        witchNode3.run(animateWitch2(node: witchNode3))
     }
     
     public override func update(_ currentTime: TimeInterval) {
@@ -66,11 +74,20 @@ public final class Halloween2018: SKScene {
     }
     
     private func animateWitch(node: SKNode) -> SKAction {
-        let moveRight = SKAction.moveTo(x: self.frame.maxX + node.frame.width, duration: 15)
+        let moveRight = SKAction.moveTo(x: self.frame.maxX + node.frame.width, duration: TimeInterval(Int.random(in: 0 ..< 15)))
         let rotateLeft = SKAction.scaleX(to: -node.xScale, duration: 0)
-        let moveLeft = SKAction.moveTo(x: (self.frame.minX - node.frame.width), duration: 15)
+        let moveLeft = SKAction.moveTo(x: (self.frame.minX - node.frame.width), duration: TimeInterval(Int.random(in: 0 ..< 15)))
         let rotateRight = SKAction.scaleX(to: node.xScale, duration: 0)
         let moveLoop = SKAction.sequence([moveRight, rotateLeft, moveLeft, rotateRight])
+        return SKAction.repeatForever(moveLoop)
+    }
+    
+    private func animateWitch2(node: SKNode) -> SKAction {
+        //let moveDown = SKAction.moveTo(y: self.frame.maxY - node.frame.height, duration: TimeInterval(Int.random(in: 0 ..< 15)))
+        //let moveUp = SKAction.moveTo(y: self.frame.maxY + node.frame.height, duration: TimeInterval(Int.random(in: 0 ..< 15)))
+        let ZoomIn = SKAction.scale(to: CGSize(width: 40, height: 40), duration: 10)
+        let ZoomOut = SKAction.scale(to: CGSize(width: 0, height: 0), duration: 10)
+        let moveLoop = SKAction.sequence([ZoomIn,ZoomOut])
         return SKAction.repeatForever(moveLoop)
     }
     
